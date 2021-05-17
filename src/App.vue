@@ -38,7 +38,7 @@
                   <a class="nav-link" href="#">SINGLE</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACT</a>
+                  <a class="nav-link" href="#" @click="name = 'sirisha'">CONTACT</a>
                 </li>
               </ul>
             </div>
@@ -73,14 +73,24 @@
     </div>
     </div>
     </div>
+     <contactUs/>
+     <aboutus/>
   </section>
 </template>
 
 <script>
+import contactUs from './components/contactUs'
+import aboutus from './components/aboutus'
 export default {
   name: "App",
+  components: {
+    contactUs,
+    aboutus
+  },
   data() {
-    return {};
+    return {
+      name: 'siri'
+    };
   },
 };
 </script>
@@ -190,5 +200,19 @@ a {
 img {
   margin-bottom: 40px;
 }
+/* @media screen and (max-width: 1000px) {
+  .elementor-column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+} */
 
+@media screen and (max-width: 650px) {
+  .elementor-column {
+    -ms-flex: 70%;
+    flex: 70%;
+    max-width: 70%;
+  }
+}
 </style>
