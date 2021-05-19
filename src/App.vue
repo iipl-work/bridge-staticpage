@@ -1,7 +1,6 @@
 <template>
-  <section>
-    <div class="container">
-      <aside class="fixed-top">
+  <div id="nav">
+     <aside class="fixed-top">
       <div class="vertical_menu_area_inner">
         <div class="vertical_menu_area_bg">
           <div class="logo_wrapper" style="margin-top: -20px">
@@ -29,16 +28,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav" style="display: table-row">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">HOME</a>
+                  <router-link to="/home" class="nav-link">HOME</router-link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">ABOUT</a>
+                    <router-link to="/about" class="nav-link">ABOUT</router-link>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">SINGLE</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" @click="name = 'sirisha'">CONTACT</a>
+                    <router-link to="/contact" class="nav-link" @click="name = 'sirisha'">CONTACT</router-link>
                 </li>
               </ul>
             </div>
@@ -52,50 +51,32 @@
         </div>
       </div>
     </aside>
-    <div class="element-inner">
-       <div class="elementor-container" style="margin-top: 30px">
-      <div class="elementor-row">
-        <div class="elementor-column">
-          <img style="width: 200%" src="./assets/bridge-img1.jpg" alt="img1" />
-          <img style="width: 200%" src="./assets/bridge-img2.jpg" alt="img1" />
-          <img style="width: 200%" src="./assets/bridge-img3.jpg" alt="img1" />
-          <img style="width: 200%" src="./assets/bridge-img4.jpg" alt="img1" />
-          <img style="width: 200%" src="./assets/bridge-img5.jpg" alt="img1" />
-        </div>
-        <div class="elementor-column">
-          <img style="width: 300%" src="./assets/bridge1.jpg" alt="img1" />
-          <img style="width: 300%" src="./assets/bridge2.jpg" alt="img1" />
-          <img style="width: 300%" src="./assets/bridge3.jpg" alt="img1" />
-          <img style="width: 300%" src="./assets/bridge4.jpg" alt="img1" />
-          <img style="width: 300%" src="./assets/bridge5.jpg" alt="img1" />
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-     <contactUs/>
-     <aboutus/>
-  </section>
+  </div>
+  <router-view/>
 </template>
-
 <script>
-import contactUs from './components/contactUs'
-import aboutus from './components/aboutus'
 export default {
   name: "App",
-  components: {
-    contactUs,
-    aboutus
-  },
   data() {
-    return {
-      name: 'siri'
-    };
+    return {};
   },
 };
 </script>
 
 <style>
+/* #app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+} */
+
+/* #nav {
+  padding: 30px;
+} */
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -181,38 +162,32 @@ a {
   color: black;
   text-decoration: none;
 }
-.element-inner{
-  /* margin-top: -610px; */
-  padding-left: 200px;
-}
-.elementor-container .elementor-row {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-.elementor-container .elementor-row .elementor-column {
-  width: 40%;
-  position: relative;
-  padding: 0% 13% 0% 12%;
-  margin: 0 0 16%;
-}
-img {
-  margin-bottom: 40px;
-}
-/* @media screen and (max-width: 1000px) {
-  .elementor-column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-} */
-
 @media screen and (max-width: 650px) {
-  .elementor-column {
-    -ms-flex: 70%;
-    flex: 70%;
-    max-width: 70%;
+  .navbar{
+    margin-left: 30px;
   }
+.vertical_menu_area_bg {
+    width: 200px;
+    padding: 50px;
+    margin-left: -30px;
+}  
+.social {
+  display: none;
+}
+.q_logo {
+  height: 100px;
+ margin-top: -49px;
+ margin-left: 230px;
+}
+}
+@media screen and (max-width: 370px) {
+  .navbar{
+  margin-top: -50px;
+  }
+.q_logo {
+  height: 80px;
+ margin-top: -49px;
+ margin-left: 170px;
+}
 }
 </style>
