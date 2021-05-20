@@ -162,6 +162,16 @@ a {
   color: black;
   text-decoration: none;
 }
+@media screen and (max-width: 1024px) {
+ .navbar{
+  margin-top: 400px;
+  margin-bottom: 400px;
+  font-size: 1.1rem;
+}
+.navbar-nav li{
+  float: left;
+}
+}
 @media screen and (max-width: 650px) {
   .navbar{
     margin-left: 30px;
