@@ -9,7 +9,7 @@
           <div class="elementor-image">
             <img src="../assets/contactus.jpg" alt="img2" />
           </div>
-          <div class="elementor-element">
+          <!-- <div class="elementor-element">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"
                 >Email address</label
@@ -38,9 +38,53 @@
                 placeholder="your e-mail"
               />
             </form>
-          </div>
+          </div> -->
         </div>
       </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="your e-mail"
+          />
+        </div>
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="your Address"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="your Name"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            placeholder="your Message"
+            rows="6"
+            style="margin-bottom: 20px"
+          ></textarea>
+        </div>
+      </div>
+      <div>
+      <h4>READ MORE</h4>
+    </div>
     </div>
   </section>
 </template>
@@ -55,4 +99,51 @@ export default {
 </script>
 
 <style scoped>
+.elementor-container {
+  margin-left: 350px;
+  /* margin-right: 50px; */
+}
+.elementor-container .elementor-row {
+  width: 750px;
+  margin-left: 120px;
+}
+.elementor-text-editor{
+  width: 400px;
+}
+.elementor-image{
+  width: 500px;
+}
+.container{
+  margin-left: 350px;
+}
+.container .row {
+  margin-top: -37px;
+  width: 750px;
+  margin-left: 50px;
+}
+.form-control {
+  border: 1px solid #0b0b0b;
+  border-radius: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-top: 60px;
+}
+h1 {
+  margin-left: -50px;
+  float: left;
+  font-size: 4.5rem;
+}
+img {
+  margin-bottom: -30px;
+    margin-left: -50px;
+  float: left;
+}
+h4{
+  font-weight: 600px;
+  font-size: 0.8rem;
+    color: black;
+  margin-left: 60px;
+  float: left;
+  margin-bottom: 100px;
+}
 </style>
