@@ -77,7 +77,7 @@
             class="form-control"
             id="exampleFormControlTextarea1"
             placeholder="your Message"
-            rows="6"
+            rows="10"
             style="margin-bottom: 20px"
           ></textarea>
         </div>
@@ -100,11 +100,12 @@ export default {
 
 <style scoped>
 .elementor-container {
-  margin-left: 350px;
+  margin-left: 300px;
   /* margin-right: 50px; */
 }
 .elementor-container .elementor-row {
   width: 750px;
+  margin-top: 180px;
   margin-left: 120px;
 }
 .elementor-text-editor{
@@ -114,10 +115,10 @@ export default {
   width: 500px;
 }
 .container{
-  margin-left: 350px;
+  margin-left: 300px;
 }
 .container .row {
-  margin-top: -37px;
+  margin-top: -68px;
   width: 750px;
   margin-left: 50px;
 }
@@ -126,15 +127,16 @@ export default {
   border-radius: 0;
   font-size: 0.9rem;
   line-height: 1.6;
-  margin-top: 60px;
+  margin-top: 90px;
 }
 h1 {
+  margin-bottom: 20px;
   margin-left: -50px;
   float: left;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 img {
-  margin-bottom: -30px;
+  margin-bottom: -66px;
     margin-left: -50px;
   float: left;
 }
@@ -145,5 +147,36 @@ h4{
   margin-left: 60px;
   float: left;
   margin-bottom: 100px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 1025px) {
+  .vertical_menu_area_bg {
+    width: 200px;
+    padding: 50px;
+    margin-left: -80px;
+}
+.elementor-container {
+    margin-left: 320px;
+}
+.container {
+    margin-left: 200px;
+}
+.container .row {
+    margin-top: -37px;
+    width: 620px;
+    margin-left: 170px;
+}
+h4{
+  margin-left: 180px;
+}
+}
+@media screen and (max-width: 370px) {
+.elementor-container {
+    margin-left: 320px;
+}
+.container {
+    margin-left: 200px;
+}
+
 }
 </style>
