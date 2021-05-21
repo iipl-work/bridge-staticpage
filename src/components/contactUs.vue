@@ -56,7 +56,7 @@
           <input
             type="text"
             class="form-control"
-            id="exampleFormControlInput1"
+            id="exampleFormControlInput2"
             placeholder="your Address"
           />
         </div>
@@ -172,11 +172,48 @@ h4{
 }
 @media screen and (max-width: 370px) {
 .elementor-container {
-    margin-left: 320px;
+  margin-top: 400px;
+    margin-left: -20px;
+}
+.elementor-container .elementor-row {
+    width: 320px;
+}
+.elementor-text-editor {
+    width: 140px;
+}
+h1 {
+    margin-bottom: 30px;
+    margin-left: -80px;
+    float: left;
+    font-size: 2.0rem;
+}
+.elementor-image {
+    width: 300px;
+}
+.elementor-image[data-v-66906004] {
+    width: 200px;
+    margin-left: -40px;
+}
+img {
+    width: 280px;
+    margin-bottom: -66px;
+    margin-left: -50px;
+    float: left;
 }
 .container {
-    margin-left: 200px;
+    margin-left: -174px;
+    width: 320px;
 }
-
+.container .row {
+    margin-top: -69px;
+    width: 300px;
+    margin-left: 160px;
+}
+.form-control {
+    width: 280px;
+}
+#exampleFormControlInput2{
+  margin-top: 19px;
+}
 }
 </style>
