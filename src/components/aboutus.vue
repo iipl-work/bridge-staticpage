@@ -17,14 +17,14 @@
                 font-family: 'Barlow Condensed', sans-serif;
                 font-style: italic;
                 float: left;
+                width: 180px;
               "
             >
               <h1>LAZAR</h1>
             </div>
-            <div class="column">
+            <div class="column" id="img1">
               <img
                 src="../assets/aboutus.png"
-                style="width: 330px"
                 alt="img2"
               />
             </div>
@@ -64,6 +64,8 @@ export default {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
+  margin-top: 180px;
+    margin-left: 100px;
 }
 .elementor-container .elementor-row .elementor-column {
   width: 40%;
@@ -73,16 +75,28 @@ export default {
 }
 .elementor-container .elementor-row .container-column {
   width: 40%;
-  padding: 0 40% 0% 20%;
+  padding: 0 0% 0% 10%;
 }
 .elementor-container .elementor-img img {
-  width: 200%;
+  width: 150%;
 }
 .elementor-container .elementor-row .container-column h1 {
   color: black;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   line-height: 60px;
   float: left;
+  letter-spacing: 10px;
+}
+  .container-column .row .column img{
+    width: 420px;
+  }
+p {
+  letter-spacing: 1px;
+    line-height: 30px;
+}
+span{
+  font-weight: 600;
+    margin-top: 20px;
 }
 .container-column .row {
   width: 500px;
@@ -95,26 +109,79 @@ export default {
   flex-wrap: wrap;
 }
 @media screen and (max-width: 1025px) {
+  .elementor-container {
+    margin-left: 120px;
+}
   .elementor-container .elementor-img img {
-    width: 300%;
-    margin-left: 185px;
-    margin-top: 180px;
-  }
+    width: 240%;
+    margin-left: 230px;
+    margin-top: 0px;
+}
   .elementor-container .elementor-row .container-column {
     width: 40%;
     padding: 0 61% 0% 20%;
   }
   .elementor-container .elementor-row .container-column h1 {
     color: black;
-    font-size: 4.5rem;
-    line-height: 95px;
+    font-size: 5.5rem;
+    line-height: 100px;
     float: left;
   }
   .container-column .row .column p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   span {
+    font-size: 2.0rem;
     margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .elementor-container .elementor-row {
+    margin-left: -40px;
+  }
+  .elementor-column {
+    -ms-flex: 70%;
+    flex: 70%;
+    max-width: 70%;
+  }
+  .elementor-container .elementor-row .container-column {
+    width: 40%;
+    padding: 130% 0% 0% 0%;
+    margin-left: -340px;
+}
+
+  .elementor-container .elementor-img img {
+    margin-top: 50px;
+    width: 450px;
+    margin-left: 130px;
+}
+
+  .elementor-container .elementor-row .container-column h1 {
+    color: black;
+    font-size: 5.5rem;
+    line-height: 100px;
+    float: left;
+  }
+  .container-column .row {
+    width: 710px;
+    float: left;
+    margin-left: 0;
+}
+  .container-column .row .column img{
+    margin-left: 70px;
+  width: 460px;
+    margin-top: 20px;
+}
+  p {
+    line-height: 40px;
+    font-size: 1.5rem;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .navbar {
+    margin-top: 400px;
+    margin-bottom: 400px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -146,7 +213,6 @@ export default {
   }
 }
 @media screen and (max-width: 370px) {
-  
   .elementor-container .elementor-img img {
     width: 650%;
     margin-left: -180px;

@@ -78,7 +78,7 @@ export default {
 
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -120,7 +120,9 @@ aside .fixed-top {
   margin-left: 90px;
 }
 .navbar-light .navbar-nav .nav-link {
+  font-size: 1.2rem;
     color: rgb(0 0 0);
+    float: left;
 }
 .navbar-nav .nav-link {
   margin-right: 600px;
@@ -164,15 +166,15 @@ a {
 }
 @media screen and (max-width: 1024px) {
  .navbar{
-  margin-top: 400px;
-  margin-bottom: 400px;
+  margin-top: 100px;
+  margin-bottom: 10px;
   font-size: 1.1rem;
 }
 .navbar-nav li{
   float: left;
 }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
   .navbar{
     margin-left: 30px;
   }
@@ -190,14 +192,14 @@ a {
  margin-left: 230px;
 }
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 770px) {
   .navbar{
   margin-top: -50px;
   }
 .q_logo {
   height: 80px;
  margin-top: -49px;
- margin-left: 170px;
+ margin-left: 350px;
 }
 }
 </style>

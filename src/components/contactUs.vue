@@ -125,7 +125,7 @@ export default {
 .form-control {
   border: 1px solid #0b0b0b;
   border-radius: 0;
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   line-height: 1.6;
   margin-top: 90px;
 }
@@ -133,7 +133,7 @@ h1 {
   margin-bottom: 20px;
   margin-left: -50px;
   float: left;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 }
 img {
   margin-bottom: -66px;
@@ -170,9 +170,45 @@ h4{
   margin-left: 180px;
 }
 }
+@media screen and (max-width: 780px) {
+  .elementor-container {
+  margin-top: 280px;
+    margin-left: 0px;
+}
+.elementor-container .elementor-row {
+    width: 750px;
+}
+.container {
+    margin-left: -174px;
+    width: 750px;
+}
+.container .row {
+    margin-top: -63px;
+    width: 750px;
+    /* margin-left: 160px; */
+}
+.elementor-text-editor {
+    width: 750px;
+}
+h1 {
+  font-size: 5.0rem;
+    letter-spacing: 10px;
+    margin-left: -90px;
+    float: left;
+}
+img {
+margin-bottom: -30px;
+    margin-left: -90px;
+    float: left;
+}
+h4{
+  letter-spacing: 3px;
+    font-size: 1.2rem;
+}
+}
 @media screen and (max-width: 370px) {
 .elementor-container {
-  margin-top: 400px;
+  margin-top: 300px;
     margin-left: -20px;
 }
 .elementor-container .elementor-row {
@@ -188,9 +224,6 @@ h1 {
     font-size: 2.0rem;
 }
 .elementor-image {
-    width: 300px;
-}
-.elementor-image[data-v-66906004] {
     width: 200px;
     margin-left: -40px;
 }

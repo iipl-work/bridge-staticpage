@@ -3,14 +3,14 @@
     <div class="container">
    
     <div class="element-inner">
-       <div class="elementor-container" style="margin-top: 160px">
+       <div class="elementor-container">
       <div class="elementor-row">
         <div class="elementor-column">
-          <img style="width: 200%" src="../assets/bridge-img1.jpg" alt="img1" />
-          <img style="width: 200%" src="../assets/bridge-img2.jpg" alt="img1" />
-          <img style="width: 200%" src="../assets/bridge-img3.jpg" alt="img1" />
-          <img style="width: 200%" src="../assets/bridge-img4.jpg" alt="img1" />
-          <img style="width: 200%" src="../assets/bridge-img5.jpg" alt="img1" />
+          <img style="width: 220%" src="../assets/bridge-img1.jpg" alt="img1" />
+          <img style="width: 220%" src="../assets/bridge-img2.jpg" alt="img1" />
+          <img style="width: 220%" src="../assets/bridge-img3.jpg" alt="img1" />
+          <img style="width: 220%" src="../assets/bridge-img4.jpg" alt="img1" />
+          <img style="width: 220%" src="../assets/bridge-img5.jpg" alt="img1" />
         </div>
         <div class="elementor-column">
           <img src="../assets/bridge1.jpg" alt="img1" />
@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -123,8 +123,11 @@ a {
 }
 .element-inner{
   /* margin-top: -610px; */
-  margin-right: 20px;
+  margin-right: 10px;
   padding-left: 200px;
+}
+.element-inner .elementor-container{
+  margin-top: 100px;
 }
 .elementor-container .elementor-row {
   width: 100%;
@@ -139,7 +142,7 @@ a {
   margin: 0 0 16%;
 }
 img {
-  width: 300%;
+  width: 320%;
   margin-bottom: 40px;
 }
 /* @media screen and (max-width: 1000px) {
@@ -149,7 +152,13 @@ img {
     max-width: 50%;
   }
 } */
-
+@media screen and (max-width: 770px) {
+ .element-inner{
+   margin-top: 200px;
+   margin-right: 10px;
+   margin-left: -250px;
+ }
+}
 @media screen and (max-width: 650px) {
   .elementor-column {
     -ms-flex: 70%;
