@@ -208,42 +208,44 @@ h4{
 }
 @media screen and (max-width: 370px) {
 .elementor-container {
-  margin-top: 300px;
+  margin-top: -300px;
     margin-left: -20px;
 }
 .elementor-container .elementor-row {
-    width: 320px;
+    width: 350px;
 }
 .elementor-text-editor {
     width: 140px;
 }
 h1 {
-    margin-bottom: 30px;
+  letter-spacing: 2px;
+   color: black;
+    margin-bottom: 50px;
     margin-left: -80px;
     float: left;
-    font-size: 2.0rem;
+    font-size: 3rem;
 }
 .elementor-image {
     width: 200px;
     margin-left: -40px;
 }
 img {
-    width: 280px;
+    width: 320px;
     margin-bottom: -66px;
     margin-left: -50px;
     float: left;
 }
 .container {
     margin-left: -174px;
-    width: 320px;
+    width: 350px;
 }
 .container .row {
     margin-top: -69px;
-    width: 300px;
+    width: 350px;
     margin-left: 160px;
 }
 .form-control {
-    width: 280px;
+    width: 320px;
 }
 #exampleFormControlInput2{
   margin-top: 19px;

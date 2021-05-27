@@ -144,16 +144,19 @@ span{
     flex: 70%;
     max-width: 70%;
   }
+  /* .elementor-container .elementor-row{
+    margin-top: -180px;
+  } */
   .elementor-container .elementor-row .container-column {
     width: 40%;
     padding: 130% 0% 0% 0%;
-    margin-left: -340px;
+    margin-left: -320px;
 }
 
   .elementor-container .elementor-img img {
-    margin-top: 50px;
+    margin-top: -240px;
     width: 450px;
-    margin-left: 130px;
+    margin-left: 100px;
 }
 
   .elementor-container .elementor-row .container-column h1 {
@@ -213,31 +216,35 @@ span{
   }
 }
 @media screen and (max-width: 370px) {
+  .elementor-container{
+    margin-left: 240px;
+  }
   .elementor-container .elementor-img img {
-    width: 650%;
-    margin-left: -180px;
-    margin-top: 180px;
+    width: 580%;
+    margin-left: -140px;
+    margin-top: 10px;
   }
   .elementor-container .elementor-row .elementor-column {
   width: 40%;
   position: relative;
   padding: 3% 10% 0% 8%;
-  margin-top: 70px;
+  margin-top: -160px;
 }
   .elementor-container .elementor-row .container-column {
     width: 40%;
     padding: 1% 5% 0% 5%;
-    margin-top: 830px;
+    margin-top: 470px;
     margin-left: -127px;
   }
   .elementor-container .elementor-row .container-column h1 {
+    letter-spacing: 2px;
     color: black;
-    font-size: 2.2rem;
-    line-height: 38px;
+    font-size: 3.6rem;
+    line-height: 52px;
     float: left;
-  }
+}
   .container-column .row{
-    width: 300px;
+    width: 340px;
     float: left;
     margin-left: 0;
 }
@@ -245,6 +252,17 @@ span{
     font-size: 1.0rem;
     float: left;
   }
+  .container-column .row .column img {
+    margin-left: 0px;
+    width: 340px;
+    margin-top: 20px;
+}
+span{
+  font-size: 1.1rem;
+}
+.form-control {
+    width: 340px;
+}
   /* img {
     width: 650%;
     vertical-align: middle;

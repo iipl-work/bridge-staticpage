@@ -158,6 +158,9 @@ img {
    margin-right: 10px;
    margin-left: -250px;
  }
+ .element-inner .elementor-container {
+    margin-top: -300px;
+}
 }
 @media screen and (max-width: 650px) {
   .elementor-column {
@@ -165,8 +168,6 @@ img {
     flex: 70%;
     max-width: 70%;
   }
-}
-@media screen and (max-width: 650px) {
 .elementor-container .elementor-row {
  width: 260px;
  margin-left: -180px;
@@ -175,5 +176,16 @@ img {
   width: 200%;
 }
 }
-
+@media screen and (max-width: 400px) {
+  .element-inner{
+    margin-left: 0px;
+  }
+  .element-inner .elementor-container{
+    margin-top: -200px;
+}
+  .elementor-container .elementor-row {
+    width: 290px;
+    margin-left: -200px;
+}
+}
 </style>

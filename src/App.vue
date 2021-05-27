@@ -20,7 +20,7 @@
               data-toggle="collapse"
               data-target="#navbarNav"
               aria-controls="navbarNav"
-              aria-expanded="false"
+              aria-expanded="true"
               aria-label="Toggle navigation"
             >
               <span class="navbar-toggler-icon"></span>
@@ -34,10 +34,10 @@
                     <router-link to="/about" class="nav-link">ABOUT</router-link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">SINGLE</a>
+                  <router-link  to="/single" class="nav-link">SINGLE</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/contact" class="nav-link" @click="name = 'sirisha'">CONTACT</router-link>
+                    <router-link to="/contact" class="nav-link">CONTACT</router-link>
                 </li>
               </ul>
             </div>
@@ -193,13 +193,42 @@ a {
 }
 }
 @media screen and (max-width: 770px) {
+  .fixed-top {
+  position: relative;
+  top: -50px;
+}
+
   .navbar{
   margin-top: -50px;
+  }
+  .navbar-collapse {
+    margin-bottom: 100px;
   }
 .q_logo {
   height: 80px;
  margin-top: -49px;
  margin-left: 350px;
+}
+}
+@media screen and (max-width: 400px) {
+  .vertical_menu_area_bg {
+    margin-left: -60px;
+  }
+ .navbar {
+    margin-left: 10px;
+    float: left;
+    margin-top: -70px;
+}
+.navbar-collapse{
+  background-color: white;
+  margin-left: 15px;
+    margin-bottom: 30px;
+
+}
+.q_logo {
+    height: 80px;
+    margin-top: -49px;
+    margin-left: 170px;
 }
 }
 </style>
